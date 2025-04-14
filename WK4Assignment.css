@@ -1,0 +1,156 @@
+.body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f459;
+                  
+}
+h1{
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+h2{
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+p{
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+#home {
+    background-color: #e0f7fa; /* Light cyan background */
+    padding: 20px; /* Adds space inside the container */
+    margin: 20px auto; /* Centers the container and adds vertical spacing */
+    max-width: 800px; /* Limits the width of the container */
+    border-radius: 10px; /* Rounds the corners of the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    text-align: center; /* Centers the text inside the container */
+}
+#about {
+    background-color: #ffe0b2; /* Light orange background */
+    padding: 20px; /* Adds space inside the container */
+    margin: 20px auto; /* Centers the container and adds vertical spacing */
+    max-width: 800px; /* Limits the width of the container */
+    border-radius: 10px; /* Rounds the corners of the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    text-align: center; /* Centers the text inside the container */
+}
+#services{
+    background-color: #e1bee7; /* Light purple background */
+    padding: 20px; /* Adds space inside the container */
+    margin: 20px auto; /* Centers the container and adds vertical spacing */
+    max-width: 800px; /* Limits the width of the container */
+    border-radius: 10px; /* Rounds the corners of the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    text-align: center; /* Centers the text inside the container */
+    flex-wrap: wrap;
+}
+
+#services ul {
+    list-style-type: square; /* Changes the bullet style to square */
+    padding: 0; /* Removes default padding */
+    margin: 0 auto; /* Centers the list */
+    display: inline-block; /* Makes the list behave like an inline element for centering */
+    text-align: left; /* Aligns the text inside the list items */
+}
+
+#services li {
+    margin: 5px 0; /* Adds spacing between list items */
+}
+
+.navbar {
+    background-color: #333; /* Dark background for the navigation bar */
+    padding: 10px 20px; /* Adds padding inside the navbar */
+}
+
+.nav-list {
+    list-style: none; /* Removes default bullet points */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    display: flex; /* Makes the list items display horizontally */
+    justify-content: flex-start; /* Aligns the list to the left */
+    align-items: center; /* Vertically centers the items */
+}
+
+.nav-list li {
+    margin-right: 20px; /* Adds spacing between list items */
+}
+
+.nav-list a {
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* Sets the link text color to white */
+    font-size: 16px; /* Sets the font size */
+    transition: color 0.3s; /* Adds a smooth transition effect */
+}
+
+.nav-list a:hover {
+    color: #e0f7fa; /* Changes the link color on hover */
+}
+
+#contact {
+    background-color: #696e69e0; /* Light green background */
+    padding: 20px; /* Adds space inside the container */
+    margin: 0; /* Removes any margin */
+    width: auto; /* Extends the container across the whole page */
+    height: 240px;
+    box-shadow: none; /* Removes the shadow */
+    text-align: left; /* Aligns the text inside the container to the left */
+    display: flex; /* Enables flexbox for alignment */
+    flex-direction: column; /* Stacks content vertically */  
+    clear: both; /* Ensures proper layout flow */
+}
+.us {
+    text-align: left;
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    /* Adjust the body padding and font size */
+    .body {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* Center-align headings and reduce margins */
+    h1, h2 {
+        margin-top: 10px;
+        font-size: 1.5em; /* Adjust heading size for smaller screens */
+    }
+
+    /* Make sections like #home, #about, #services, and #contact fit smaller screens */
+    #home, #about, #services, #contact {
+        margin: 10px auto; /* Reduce margins */
+        padding: 15px; /* Adjust padding */
+        max-width: 100%; /* Ensure sections take full width */
+        border-radius: 5px; /* Reduce corner rounding */
+    }
+
+    /* Adjust navigation bar for mobile */
+    .navbar {
+        padding: 10px;
+    }
+
+    .nav-list {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .nav-list li {
+        margin: 10px 0; /* Add spacing between items */
+    }
+
+    /* Adjust #services ul for mobile */
+    #services ul {
+        display: block; /* Stack list items vertically */
+        text-align: left; /* Align text to the left */
+    }
+
+    /* Adjust #contact height for mobile */
+    #contact {
+        height: auto; /* Allow height to adjust dynamically */
+        padding: 15px; /* Adjust padding */
+    }
+}
